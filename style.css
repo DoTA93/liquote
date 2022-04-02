@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Berkshire+Swash&family=DM+Sans:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Baloo 2", cursive;
+  font-family: "Berkshire Swash", cursive;
+  font-family: "DM Sans", sans-serif;
+  background-color: #3DC47E !important;
+  color: #262D33 !important;
+}
+
+.logo{
+    max-height: 64px;
+    max-width: 100%;
+}
+
+.green-color{
+    color: #3DC47E;
+}
+
+.white-color{
+    color: #ffffff !important;
+}
+
+.black-color{
+    color: #262D33;
+}
+
+.muted-color{
+    color: #A8ABAD;
+}
+
+.placeholder-color{
+    color: #B4B7BD;
+}
+
+.quote-font{
+    font-size: 32px;
+    line-height: 40 px;
+    font-family: "Baloo 2";
+}
+
+.heading-font{
+    font-size: 32px;
+    line-height: 40px;
+    font-family: "Berkshire Swash";
+}
+
+.medium-regular-font{
+    font-size: 20px;
+    line-height: 32px;
+    font-family: "DM Sans";
+    font-weight: 400;
+}
+
+.medium-bold-font{
+    font-size: 20px;
+    line-height: 32px;
+    font-family: "DM Sans";
+    font-weight: 700;
+}
+
+.small-font{
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    font-family: "DM Sans";
+    line-height: 24px !important;
+}
+
+.smaller-font{
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "DM Sans";
+    line-height: 16px;
+}
+
+.placeholder-font{
+    font-size: 20px;
+    line-height: 32px;
+    font-family: "DM Sans";
+    font-weight: 500;
+}
+
+.background-color-green{
+    background-color: #3DC47E;
+}
+
+.input-bg-color{
+    background-color: #F4F6F8;
+}
+
+.button-bmc{
+    color: #3DC47E !important;
+    background-color: #ffffff !important;
+    font-size: 20px !important;
+ 
+    border: none !important;
+    font-family: "Berkshire Swash";
+    border-radius: 8px !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+
+.button-bmc:hover{
+    color: #ffffff !important;
+    background-color: #1ea961 !important;
+}
+
+.button-bmc:active{
+    background-color: #1ea961 !important;
+}
+
+.button-bmc:focus {
+    box-shadow: 0 0 0 0.25rem rgb(30 169 97 / 50%) !important;
+}
+
+
+.button-cq{
+    color: #ffffff !important;
+    font-size: 20px !important;
+    
+    border-color: #ffffff !important;
+    font-family: "DM Sans";
+    font-weight: bold !important;
+    border-radius: 8px !important;
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+
+.button-cq:hover{
+    background-color: #1ea961 !important;
+}
+
+.button-cq:active{
+    background-color: #1ea961 !important;
+}
+
+.button-cq:focus {
+    box-shadow: 0 0 0 0.25rem rgb(30 169 97 / 50%) !important;
+}
+
+.button-default{
+    color: #ffffff !important;
+    font-size: 16px !important;
+    background-color: #3DC47E !important;
+    border-color: #3DC47E !important;
+    font-family: "DM Sans";
+    font-weight: bold !important;
+    border-radius: 8px !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    width: 100%;
+}
+
+.button-default:hover{
+    background-color: #1ea961 !important;
+}
+
+.button-default:active{
+    background-color: #1ea961 !important;
+}
+
+.button-default:focus {
+    box-shadow: 0 0 0 0.25rem rgb(30 169 97 / 50%) !important;
+}
+
+.button-link{
+    color: #3DC47E !important;
+    text-decoration: none !important;
+    width: 100%;
+}
+
+.carousel-control-next-icon{
+    background-image: url(./img/arrow_right.svg) !important;
+}
+
+.carousel-control-prev-icon{
+    background-image: url(./img/arrow_left.svg) !important;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15% !important;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: 1 !important;
+    transition: opacity .15s ease;
+}
+
+.social-icon{
+    max-width: 64px !important;
+    height: auto;
+}
+
+.author-img{
+    max-width: 104px !important;
+    height: auto;
+}
+
+
+.carousel-padding{
+    padding-left: 15% !important;
+    padding-right: 15% !important;
+}
+
+.card-body{
+    padding: 2rem !important;
+}
+
+.input-default{
+    background-color: #F4F6F8 !important;
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.1);
+    border: none !important;
+    padding: 12px !important;
+    border-radius: 8px !important;
+}
+
+.input-default:active{
+    background-color: #1ea961 !important;
+}
+
+.input-upload:focus {
+    box-shadow: 0 0 0 0.25rem rgb(30 169 97 / 20%) !important;
+}
+
+.input-upload:active{
+    background-color: #1ea961 !important;
+}
+
+.input-default:focus {
+    box-shadow: 0 0 0 0.25rem rgb(30 169 97 / 20%) !important;
+}
+
+.input-default::placeholder{
+    color: #b4b7bd !important;
+    font-family: "DM Sans" !important;
+}
+
+label{
+    font-family: "DM Sans" !important;
+    color: #262D33;
+}
+
+@media (max-width: 767.98px) { 
+    .quote-font{
+        font-size: 20px;
+        line-height: 28px;
+        font-family: "Baloo 2";
+    }
+
+    .small-font{
+        font-size: 14px !important;
+        font-weight: 400 !important;
+        font-family: "DM Sans";
+        line-height: 20px !important;
+    }
+
+    .heading-font{
+        font-size: 24px;
+        line-height: 28px;
+        font-family: "Berkshire Swash";
+    }
+    
+    .medium-regular-font{
+        font-size: 16px;
+        line-height: 24px;
+        font-family: "DM Sans";
+        font-weight: 500;
+    }
+    
+    .medium-bold-font{
+        font-size: 16px;
+        line-height: 24px;
+        font-family: "DM Sans";
+        font-weight: 700;
+    }
+    
+    .smaller-font{
+        font-size: 10px;
+        font-weight: 500;
+        font-family: "DM Sans";
+        line-height: 16px;
+    }
+
+    .social-icon{
+        max-width: 40px !important;
+        height: auto;
+    }
+
+    .author-img{
+        max-width: 88px !important;
+        height: auto;
+    }
+
+
+    .logo{
+        max-height: 48px !important;
+        max-width: 100%;
+    }
+ }
+
+ @media (max-width: 991.98px) { 
+     .navbar-desktop{
+         display: none !important;
+         
+     }
+
+  }
+
+  .navbar-desktop{
+      display: flex;
+  }
+
+  @media (min-width: 992px){
+    .navbar-mobile{
+        display: none !important;
+    }
+  }
+
+ 
