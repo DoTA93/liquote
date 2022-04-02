@@ -262,7 +262,7 @@ label{
 @media (max-width: 767.98px) { 
 
     .quote-section{
-    min-height: calc(100vh - 199px);
+    min-height: calc(100vh - 199px) !important;
 }
 
     .quote-font{
