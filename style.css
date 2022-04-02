@@ -8,6 +8,10 @@ body {
   color: #262D33 !important;
 }
 
+.quote-section{
+    min-height: calc(100vh - 151px);
+}
+
 .logo{
     max-height: 64px;
     max-width: 100%;
@@ -256,6 +260,11 @@ label{
 }
 
 @media (max-width: 767.98px) { 
+
+    .quote-section{
+    min-height: calc(100vh - 199px);
+}
+
     .quote-font{
         font-size: 20px;
         line-height: 28px;
