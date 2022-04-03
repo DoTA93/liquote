@@ -357,6 +357,12 @@ label{
     background-color: #3587FF;
 }
 
+.background-vector {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
  /* @media (max-width: 991.98px) { 
      .navbar-desktop{
          display: none;
