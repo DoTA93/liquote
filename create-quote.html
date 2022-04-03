@@ -5,9 +5,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!--Style CSS-->
-    <link rel="stylesheet" href="style.css" />
-
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
@@ -18,85 +15,44 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <!--Style CSS-->
+    <link rel="stylesheet" href="style.css" />
 
     <title>liquote | Inspiring and Beautiful Quotes</title>
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-light align-items-center navbar-desktop"
-      style="z-index: 2"
-    >
+    <nav class="navbar navbar-expand navbar-light align-items-center navbar-desktop" style="z-index: 2">
       <div class="container-fluid">
         <a class="navbar-brand" href="./index.html"
           ><img class="logo" src="./img/liquote_white.svg" alt="" srcset=""
         /></a>
 
-        <div class="justify-content-end">
-          <ul class="navbar-nav mb-2 mb-lg-0" style="z-index: 2">
-            <li class="nav-item">
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto" style="z-index: 2">
+            <li class="nav-item d-none d-lg-flex">
               <a class="nav-link active" aria-current="page" href="./create-quote.html"
-                ><button
-                  type="button"
-                  class="btn btn-outline-primary button-cq d-flex align-items-center"
-                >
-                  <img
-                    src="./img/create-quote.svg"
-                    alt=""
-                    srcset=""
-                  />&nbsp;Create Quote
+                ><button type="button" class="btn btn-outline-primary button-cq d-flex align-items-center">
+                  <img src="./img/create-quote.svg" alt="" srcset="" />&nbsp;Create Quote
                 </button></a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item d-none d-lg-flex">
               <a class="nav-link" href="./buy-me-a-coffee.html"
-                ><button
-                  type="button"
-                  class="btn btn-primary button-bmc d-flex align-items-center"
-                >
-                  <img src="./img/coffee_mug.svg" alt="" srcset="" />&nbsp;Buy
-                  me a coffee
+                ><button type="button" class="btn btn-primary button-bmc d-flex align-items-center">
+                  <img src="./img/coffee_mug.svg" alt="" srcset="" />&nbsp;Buy me a coffee
                 </button></a
               >
             </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <nav
-      class="navbar navbar-expand navbar-light align-items-center navbar-mobile"
-      style="z-index: 2"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html"
-          ><img class="logo" src="./img/liquote_white.svg" alt="" srcset=""
-        /></a>
-
-        <div class="justify-content-end">
-          <ul class="navbar-nav mb-2 mb-lg-0" style="z-index: 2">
-            <li class="nav-item">
+            <li class="nav-item d-lg-none">
               <a class="nav-link active" aria-current="page" href="./create-quote.html"
-                ><button
-                  type="button"
-                  class="btn btn-outline-primary button-cq"
-                >
-                  <img
-                    style="max-width: 28px"
-                    src="./img/create-quote.svg"
-                    alt=""
-                    srcset=""
-                  /></button
+                ><button type="button" class="btn btn-outline-primary button-cq">
+                  <img style="max-width: 28px" src="./img/create-quote.svg" alt="" srcset="" /></button
               ></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item d-lg-none">
               <a class="nav-link" href="./buy-me-a-coffee.html"
                 ><button type="button" class="btn btn-primary button-bmc">
-                  <img
-                    style="max-width: 28px"
-                    src="./img/coffee_mug.svg"
-                    alt=""
-                    srcset=""
-                  /></button
+                  <img style="max-width: 28px" src="./img/coffee_mug.svg" alt="" srcset="" /></button
               ></a>
             </li>
           </ul>
@@ -104,45 +60,57 @@
       </div>
     </nav>
 
-    <section
-      class="align-middle d-flex align-items-center quote-section mb-4"
-    >
-      <div class="container">
-          <div class="row">
-              <div class="col-md-6 offset-md-3">
-                <div class="card">
-                    <div class="card-body">
-                      <h1 class="heading-font">Create Quote</h1>
-                      <p class="small-font">Liquote is the fastest way to create quotes and share. Making beautiful quotes just became easy! It's free!</p>
-                      <div class="my-4">
-                        <label for="exampleFormControlTextarea1" class="form-label small-font"><b>Quote</b></label>
-                        <textarea class="form-control input-default" id="exampleFormControlTextarea1" rows="4" placeholder="Your quote"></textarea>
-                      </div>
-                      <div class="mb-4">
-                        <label for="formGroupExampleInput" class="form-label small-font"><b>Author Name</b> <span class="muted-color">(Optional)</span></label>
-                        <input type="text" class="form-control input-default" id="formGroupExampleInput" placeholder="Author name">
-                      </div>
-                      <div class="mb-4">
-                        <label for="formGroupExampleInput" class="form-label small-font"><b>Author Profile Pic</b> <span class="muted-color">(Optional)</span></label>
-                        <input type="file" class="form-control input-upload" id="inputGroupFile02">
-                      </div>
+    <img src="./img/Vector.svg" alt="vector" class="background-vector" />
 
-                      <button type="button" class="btn btn-primary button-default mt-3">Create Quote</button>
-                      
-                    </div>
-                  </div>
+    <section class="align-middle d-flex align-items-center quote-section mb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <div class="card">
+              <div class="card-body">
+                <h1 class="heading-font">Create Quote</h1>
+                <p class="small-font">
+                  Liquote is the fastest way to create quotes and share. Making beautiful quotes just became easy! It's
+                  free!
+                </p>
+                <div class="my-4">
+                  <label for="exampleFormControlTextarea1" class="form-label small-font"><b>Quote</b></label>
+                  <textarea
+                    class="form-control input-default"
+                    id="exampleFormControlTextarea1"
+                    rows="4"
+                    placeholder="Your quote"
+                  ></textarea>
+                </div>
+                <div class="mb-4">
+                  <label for="formGroupExampleInput" class="form-label small-font"
+                    ><b>Author Name</b> <span class="muted-color">(Optional)</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control input-default"
+                    id="formGroupExampleInput"
+                    placeholder="Author name"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label for="formGroupExampleInput" class="form-label small-font"
+                    ><b>Author Profile Pic</b> <span class="muted-color">(Optional)</span></label
+                  >
+                  <input type="file" class="form-control input-upload" id="inputGroupFile02" />
+                </div>
+
+                <button type="button" class="btn btn-primary button-default mt-3">Create Quote</button>
               </div>
+            </div>
           </div>
+        </div>
       </div>
     </section>
 
-    <footer
-      class="navbar navbar-expand-lg navbar-light d-flex align-items-center" style="z-index: 2"
-    >
+    <footer class="navbar navbar-expand-lg navbar-light d-flex align-items-center" style="z-index: 2">
       <div class="container-fluid">
-        <a class="small-font white-color" style="text-decoration: none" href="#"
-          >About liquote</a
-        >
+        <a class="small-font white-color" style="text-decoration: none" href="#">About liquote</a>
 
         <div class="justify-content-end">
           <ul class="navbar-nav mb-2 mb-lg-0">
@@ -154,18 +122,6 @@
       </div>
     </footer>
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
