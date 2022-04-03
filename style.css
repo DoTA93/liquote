@@ -93,10 +93,8 @@ body {
 }
 
 .button-bmc{
-    color: #3DC47E;
     background-color: #ffffff;
     font-size: 20px;
- 
     border: none;
     font-family: "Berkshire Swash";
     border-radius: 8px;
@@ -106,15 +104,104 @@ body {
     padding-right: 16px;
 }
 
-.button-bmc:hover{
+.button-bmc.black {
+    color: #262D33;
+}
+.button-bmc.red {
+    color: #FF4F52;
+}
+.button-bmc.green {
+    color: #3DC47E;
+}
+.button-bmc.han-blue {
+    color: #4267B2;
+}
+.button-bmc.sky-blue {
+    color: #4CB9FC;
+}
+.button-bmc.purple {
+    color: #6D75E7;
+}
+.button-bmc.yellow {
+    color: #FFD980;
+}
+.button-bmc.blue {
+    color: #3587FF;
+}
+
+.button-bmc.black:hover, 
+.button-bmc.black:active,
+.button-cq.black:hover, 
+.button-cq.black:active
+{
+    color: #ffffff;
+    background-color: #262D33;
+    border-color: #262D33;
+}
+.button-bmc.red:hover, 
+.button-bmc.red:active,
+.button-cq.red:hover, 
+.button-cq.red:active
+{
+    color: #ffffff;
+    background-color: #1ea961;
+    border-color: #1ea961;
+}
+.button-bmc.green:hover, 
+.button-bmc.green:active,
+.button-cq.green:hover, 
+.button-cq.green:active
+{
+    color: #ffffff;
+    background-color: #1ea961;
+    border-color: #1ea961;
+}
+.button-bmc.han-blue:hover, 
+.button-bmc.han-blue:active,
+.button-cq.han-blue:hover, 
+.button-cq.han-blue:active
+{
+    color: #ffffff;
+    background-color: #1ea961;
+    border-color: #1ea961;
+}
+.button-bmc.sky-blue:hover, 
+.button-bmc.sky-blue:active,
+.button-cq.sky-blue:hover, 
+.button-cq.sky-blue:active
+{
+    color: #ffffff;
+    background-color: #1ea961;
+    border-color: #1ea961;
+}
+.button-bmc.purple:hover, 
+.button-bmc.purple:active,
+.button-cq.purple:hover, 
+.button-cq.purple:active
+{
+    color: #ffffff;
+    background-color: #1ea961;
+    border-color: #1ea961;
+}
+.button-bmc.yellow:hover, 
+.button-bmc.yellow:active,
+.button-cq.yellow:hover, 
+.button-cq.yellow:active
+{
+    color: #ffffff;
+    background-color: #1ea961;
+    border-color: #1ea961;
+}
+.button-bmc.blue:hover, 
+.button-bmc.blue:active,
+.button-cq.blue:hover, 
+.button-cq.blue:active
+{
     color: #ffffff;
     background-color: #1ea961;
     border-color: #1ea961;
 }
 
-.button-bmc:active{
-    background-color: #1ea961;
-}
 
 .button-bmc:focus {
     box-shadow: 0 0 0 0.25rem rgb(30 169 97 / 50%);
