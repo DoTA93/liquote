@@ -4,8 +4,9 @@ body {
   font-family: "Baloo 2", cursive;
   font-family: "Berkshire Swash", cursive;
   font-family: "DM Sans", sans-serif;
-  background-color: #3DC47E !important;
-  color: #262D33 !important;
+  background-color: #3DC47E;
+  color: #262D33;
+  transition: background-color 0.3s ease;
 }
 
 .quote-section{
@@ -13,7 +14,7 @@ body {
 }
 
 .logo{
-    max-height: 64px !important;
+    max-height: 64px;
 }
 
 .green-color{
@@ -21,7 +22,7 @@ body {
 }
 
 .white-color{
-    color: #ffffff !important;
+    color: #ffffff;
 }
 
 .black-color{
@@ -63,10 +64,10 @@ body {
 }
 
 .small-font{
-    font-size: 16px !important;
-    font-weight: 400 !important;
+    font-size: 16px;
+    font-weight: 400;
     font-family: "DM Sans";
-    line-height: 24px !important;
+    line-height: 24px;
 }
 
 .smaller-font{
@@ -92,98 +93,98 @@ body {
 }
 
 .button-bmc{
-    color: #3DC47E !important;
-    background-color: #ffffff !important;
-    font-size: 20px !important;
+    color: #3DC47E;
+    background-color: #ffffff;
+    font-size: 20px;
  
-    border: none !important;
+    border: none;
     font-family: "Berkshire Swash";
-    border-radius: 8px !important;
-    padding-top: 8px !important;
-    padding-bottom: 8px !important;
-    padding-left: 16px !important;
-    padding-right: 16px !important;
+    border-radius: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .button-bmc:hover{
-    color: #ffffff !important;
-    background-color: #1ea961 !important;
+    color: #ffffff;
+    background-color: #1ea961;
 }
 
 .button-bmc:active{
-    background-color: #1ea961 !important;
+    background-color: #1ea961;
 }
 
 .button-bmc:focus {
-    box-shadow: 0 0 0 0.25rem rgb(30 169 97 / 50%) !important;
+    box-shadow: 0 0 0 0.25rem rgb(30 169 97 / 50%);
 }
 
 
 .button-cq{
-    color: #ffffff !important;
-    font-size: 20px !important;
+    color: #ffffff;
+    font-size: 20px;
     
-    border-color: #ffffff !important;
+    border-color: #ffffff;
     font-family: "DM Sans";
-    font-weight: bold !important;
-    border-radius: 8px !important;
-    padding-top: 7px !important;
-    padding-bottom: 7px !important;
-    padding-left: 16px !important;
-    padding-right: 16px !important;
+    font-weight: bold;
+    border-radius: 8px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .button-cq:hover{
-    background-color: #1ea961 !important;
+    background-color: #1ea961;
 }
 
 .button-cq:active{
-    background-color: #1ea961 !important;
+    background-color: #1ea961;
 }
 
 .button-cq:focus {
-    box-shadow: 0 0 0 0.25rem rgb(30 169 97 / 50%) !important;
+    box-shadow: 0 0 0 0.25rem rgb(30 169 97 / 50%);
 }
 
 .button-default{
-    color: #ffffff !important;
-    font-size: 16px !important;
-    background-color: #3DC47E !important;
-    border-color: #3DC47E !important;
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #3DC47E;
+    border-color: #3DC47E;
     font-family: "DM Sans";
-    font-weight: bold !important;
-    border-radius: 8px !important;
-    padding-top: 12px !important;
-    padding-bottom: 12px !important;
-    padding-left: 16px !important;
-    padding-right: 16px !important;
+    font-weight: bold;
+    border-radius: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
     width: 100%;
 }
 
 .button-default:hover{
-    background-color: #1ea961 !important;
+    background-color: #1ea961;
 }
 
 .button-default:active{
-    background-color: #1ea961 !important;
+    background-color: #1ea961;
 }
 
 .button-default:focus {
-    box-shadow: 0 0 0 0.25rem rgb(30 169 97 / 50%) !important;
+    box-shadow: 0 0 0 0.25rem rgb(30 169 97 / 50%);
 }
 
 .button-link{
-    color: #3DC47E !important;
-    text-decoration: none !important;
+    color: #3DC47E;
+    text-decoration: none;
     width: 100%;
 }
 
 .carousel-control-next-icon{
-    background-image: url(./img/arrow_right.svg) !important;
+    background-image: url(./img/arrow_right.svg);
 }
 
 .carousel-control-prev-icon{
-    background-image: url(./img/arrow_left.svg) !important;
+    background-image: url(./img/arrow_left.svg);
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -194,74 +195,74 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 15% !important;
+    width: 15%;
     padding: 0;
     color: #fff;
     text-align: center;
     background: 0 0;
     border: 0;
-    opacity: 1 !important;
+    opacity: 1;
     transition: opacity .15s ease;
 }
 
 .social-icon{
-    max-width: 64px !important;
+    max-width: 64px;
     height: auto;
 }
 
 .author-img{
-    max-width: 104px !important;
+    max-width: 104px;
     height: auto;
 }
 
 
 .carousel-padding{
-    padding-left: 15% !important;
-    padding-right: 15% !important;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .card-body{
-    padding: 2rem !important;
+    padding: 2rem;
 }
 
 .input-default{
-    background-color: #F4F6F8 !important;
+    background-color: #F4F6F8;
     box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.1);
-    border: none !important;
-    padding: 12px !important;
-    border-radius: 8px !important;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
 }
 
 .input-default:active{
-    background-color: #1ea961 !important;
+    background-color: #1ea961;
 }
 
 .input-upload:focus {
-    box-shadow: 0 0 0 0.25rem rgb(30 169 97 / 20%) !important;
+    box-shadow: 0 0 0 0.25rem rgb(30 169 97 / 20%);
 }
 
 .input-upload:active{
-    background-color: #1ea961 !important;
+    background-color: #1ea961;
 }
 
 .input-default:focus {
-    box-shadow: 0 0 0 0.25rem rgb(30 169 97 / 20%) !important;
+    box-shadow: 0 0 0 0.25rem rgb(30 169 97 / 20%);
 }
 
 .input-default::placeholder{
-    color: #b4b7bd !important;
-    font-family: "DM Sans" !important;
+    color: #b4b7bd;
+    font-family: "DM Sans";
 }
 
 label{
-    font-family: "DM Sans" !important;
+    font-family: "DM Sans";
     color: #262D33;
 }
 
 @media (max-width: 767.98px) { 
 
     .quote-section{
-    min-height: calc(100vh - 223px) !important;
+    min-height: calc(100vh - 223px);
 }
 
     .quote-font{
@@ -271,10 +272,10 @@ label{
     }
 
     .small-font{
-        font-size: 14px !important;
-        font-weight: 400 !important;
+        font-size: 14px;
+        font-weight: 400;
         font-family: "DM Sans";
-        line-height: 20px !important;
+        line-height: 20px;
     }
 
     .heading-font{
@@ -305,19 +306,60 @@ label{
     }
 
     .social-icon{
-        max-width: 40px !important;
+        max-width: 40px;
         height: auto;
     }
 
     .author-img{
-        max-width: 88px !important;
+        max-width: 88px;
         height: auto;
     }
  }
 
- @media (max-width: 991.98px) { 
+ /*  color options */
+ .color-options .color {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: -35px;
+    cursor: pointer;
+    transition: all 0.32s ease-in-out;
+ }
+
+.color-options:hover .color {
+    margin-left: 1px;
+}
+
+.color-options .color.black {
+    background-color: #262D33;
+}
+.color-options .color.red {
+    background-color: #FF4F52;
+}
+.color-options .color.green {
+    background-color: #3DC47E;
+}
+.color-options .color.han-blue {
+    background-color: #4267B2;
+}
+.color-options .color.sky-blue {
+    background-color: #4CB9FC;
+}
+.color-options .color.purple {
+    background-color: #6D75E7;
+}
+.color-options .color.yellow {
+    background-color: #FFD980;
+}
+.color-options .color.blue {
+    background-color: #3587FF;
+}
+
+ /* @media (max-width: 991.98px) { 
      .navbar-desktop{
-         display: none !important;
+         display: none;
          
      }
 
@@ -329,8 +371,8 @@ label{
 
   @media (min-width: 992px){
     .navbar-mobile{
-        display: none !important;
+        display: none;
     }
-  }
+  } */
 
  

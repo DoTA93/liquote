@@ -4,9 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!--Style CSS-->
-    <link rel="stylesheet" href="style.css" />
+    <title>liquote | Inspiring and Beautiful Quotes</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -18,91 +16,42 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-
-    <title>liquote | Inspiring and Beautiful Quotes</title>
+    <!--Style CSS-->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-light align-items-center navbar-desktop"
-      style="z-index: 2"
-    >
+    <nav class="navbar navbar-expand navbar-light align-items-center navbar-desktop" style="z-index: 2">
       <div class="container-fluid">
         <a class="navbar-brand" href="./index.html"
           ><img class="logo" src="./img/liquote_white.svg" alt="" srcset=""
         /></a>
 
-        <div class="justify-content-end">
-          <ul class="navbar-nav mb-2 mb-lg-0" style="z-index: 2">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="./create-quote.html"
-                ><button
-                  type="button"
-                  class="btn btn-outline-primary button-cq d-flex align-items-center"
-                >
-                  <img
-                    src="./img/create-quote.svg"
-                    alt=""
-                    srcset=""
-                  />&nbsp;Create Quote
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto" style="z-index: 2">
+            <li class="nav-item d-none d-lg-flex">
+              <a class="nav-link active" aria-current="page" href="./create-quote.html"
+                ><button type="button" class="btn btn-outline-primary button-cq d-flex align-items-center">
+                  <img src="./img/create-quote.svg" alt="" srcset="" />&nbsp;Create Quote
                 </button></a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item d-none d-lg-flex">
               <a class="nav-link" href="./buy-me-a-coffee.html"
-                ><button
-                  type="button"
-                  class="btn btn-primary button-bmc d-flex align-items-center"
-                >
-                  <img src="./img/coffee_mug.svg" alt="" srcset="" />&nbsp;Buy
-                  me a coffee
+                ><button type="button" class="btn btn-primary button-bmc d-flex align-items-center">
+                  <img src="./img/coffee_mug.svg" alt="" srcset="" />&nbsp;Buy me a coffee
                 </button></a
               >
             </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <nav
-      class="navbar navbar-expand navbar-light align-items-center navbar-mobile"
-      style="z-index: 2"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html"
-          ><img class="logo" src="./img/liquote_white.svg" alt="" srcset=""
-        /></a>
-
-        <div class="justify-content-end">
-          <ul class="navbar-nav mb-2 mb-lg-0" style="z-index: 2">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="./create-quote.html"
-                ><button
-                  type="button"
-                  class="btn btn-outline-primary button-cq"
-                >
-                  <img
-                    style="max-width: 28px"
-                    src="./img/create-quote.svg"
-                    alt=""
-                    srcset=""
-                  /></button
+            <li class="nav-item d-lg-none">
+              <a class="nav-link active" aria-current="page" href="./create-quote.html"
+                ><button type="button" class="btn btn-outline-primary button-cq">
+                  <img style="max-width: 28px" src="./img/create-quote.svg" alt="" srcset="" /></button
               ></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item d-lg-none">
               <a class="nav-link" href="./buy-me-a-coffee.html"
                 ><button type="button" class="btn btn-primary button-bmc">
-                  <img
-                    style="max-width: 28px"
-                    src="./img/coffee_mug.svg"
-                    alt=""
-                    srcset=""
-                  /></button
+                  <img style="max-width: 28px" src="./img/coffee_mug.svg" alt="" srcset="" /></button
               ></a>
             </li>
           </ul>
@@ -110,17 +59,13 @@
       </div>
     </nav>
 
-    <section
-      class="align-middle d-flex align-items-center quote-section"
-    >
+    <section class="align-middle d-flex align-items-center quote-section">
       <div class="container">
         <div class="row">
           <div class="col-md-4 offset-md-4">
             <div class="card">
               <div class="card-body">
-                <h1 class="heading-font">
-                  Buy <span class="green-color">liquote</span> a coffee
-                </h1>
+                <h1 class="heading-font">Buy <span class="green-color">liquote</span> a coffee</h1>
                 <div class="my-4">
                   <textarea
                     class="form-control input-default"
@@ -131,12 +76,7 @@
                 </div>
 
                 <a href="./thankyou.html">
-                  <button
-                    type="button"
-                    class="btn btn-primary button-default mt-3"
-                  >
-                    Support $1
-                  </button></a
+                  <button type="button" class="btn btn-primary button-default mt-3">Support $1</button></a
                 >
               </div>
             </div>
@@ -145,13 +85,9 @@
       </div>
     </section>
 
-    <footer
-      class="navbar navbar-expand-lg navbar-light d-flex align-items-center pt-4" style="z-index: 2"
-    >
+    <footer class="navbar navbar-expand-lg navbar-light d-flex align-items-center pt-4" style="z-index: 2">
       <div class="container-fluid">
-        <a class="small-font white-color" style="text-decoration: none" href="#"
-          >About liquote</a
-        >
+        <a class="small-font white-color" style="text-decoration: none" href="#">About liquote</a>
 
         <div class="justify-content-end">
           <ul class="navbar-nav mb-2 mb-lg-0">
