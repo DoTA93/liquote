@@ -363,6 +363,28 @@ label{
     bottom: 0;
 }
 
+.canvas-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 99999;
+}
+.canvas-container canvas {
+    transform: scale(0);
+    transition: transform 0.32s ease-in-out;
+}
+.canvas-container.show canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 999999;
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); */
+}
+
  /* @media (max-width: 991.98px) { 
      .navbar-desktop{
          display: none;

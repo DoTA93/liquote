@@ -1,6 +1,7 @@
+let color = '#3DC47E'
 document.querySelectorAll('.color').forEach(function (c) {
   c.addEventListener('click', function () {
-    const color = this.dataset.color
+    color = this.dataset.color
     document.querySelector('body').style.backgroundColor = color
   })
 })
@@ -21,3 +22,27 @@ fetchQuote = (id) => {
 fetchQuote(1)
 fetchQuote(2)
 fetchQuote(3)
+
+const capture = () => {
+
+  html2canvas(
+    document.querySelector(".carousel-item.active"),
+    {
+      backgroundColor: color
+    }
+  ).then(canvas => {
+    const canvasContainer = document.createElement('div')
+    canvasContainer.setAttribute('class', 'canvas-container')
+    canvasContainer.appendChild(canvas)
+    canvasContainer.addEventListener('click', function (e) {
+      canvasContainer.remove()
+    })
+    document.body.appendChild(canvasContainer)
+    canvasContainer.classList.add('show')
+  })
+}
+
+document.querySelector('.social-icons').addEventListener('click', function (e) {
+  e.preventDefault()
+  capture()
+})
