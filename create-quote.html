@@ -28,7 +28,7 @@
     <section class="align-middle d-flex align-items-center quote-section mb-4">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 offset-md-3 d-none">
+          <div class="col-md-6 offset-md-3" id="form-block">
             <div class="card">
               <div class="card-body">
                 <h1 class="heading-font">Create Quote</h1>
@@ -37,61 +37,94 @@
                   free!
                 </p>
                 <div class="my-4">
-                  <label for="exampleFormControlTextarea1" class="form-label small-font"><b>Quote</b></label>
+                  <label for="js-custom-quote" class="form-label small-font"><b>Quote</b></label>
                   <textarea
                     class="form-control input-default"
-                    id="exampleFormControlTextarea1"
+                    id="js-custom-quote"
                     rows="4"
                     placeholder="Your quote"
                   ></textarea>
                 </div>
                 <div class="mb-4">
-                  <label for="formGroupExampleInput" class="form-label small-font"
-                    ><b>Author Name</b> <span class="muted-color">(Optional)</span></label
-                  >
+                  <label for="js-custom-author" class="form-label small-font">
+                    <b>Author Name</b> <span class="muted-color">(Optional)</span>
+                  </label>
                   <input
                     type="text"
                     class="form-control input-default"
-                    id="formGroupExampleInput"
+                    id="js-custom-author"
                     placeholder="Author name"
                   />
                 </div>
                 <div class="mb-4">
-                  <label for="formGroupExampleInput" class="form-label small-font"
-                    ><b>Author Profile Pic</b> <span class="muted-color">(Optional)</span></label
-                  >
-                  <input type="file" class="form-control input-upload" id="inputGroupFile02" />
+                  <label for="js-custom-pic" class="form-label small-font">
+                    <b>Author Profile Pic</b> <span class="muted-color">(Optional)</span>
+                  </label>
+                  <input type="file" class="form-control input-upload" id="js-custom-pic" />
                 </div>
 
-                <button type="button" class="btn btn-primary button-default mt-3">Create Quote</button>
+                <button type="button" class="btn btn-primary button-default mt-3 js-create-quote">Create Quote</button>
               </div>
             </div>
           </div>
-          <div class="col-md-12">
+          <div class="col-md-12 d-none" id="display-block">
             <div class="text-center quote-1 py-4">
-              <img class="author-img" src="./img/author.png" alt="..." />
-              <h1 class="text-center white-color small-font mt-4 text-uppercase js-author">Bill Russell</h1>
-              <h2 class="quote-font white-color mt-4 js-quote">
+              <img
+                class="author-img js-display-image rounded-circle overflow-hidden"
+                src="./img/author.png"
+                alt="..."
+                height="104"
+                width="104"
+              />
+              <h1 class="text-center white-color small-font mt-4 text-uppercase js-display-author">Bill Russell</h1>
+              <h2 class="quote-font white-color mt-4 js-display-quote">
                 This game has always been, and will always be, about buckets.
               </h2>
+              <p class="mt-5 white-color">Share via</p>
+              <div class="text-center social-icons">
+                <!-- <a class="me-2" href="#"><img class="social-icon" src="./img/facebook.svg" alt="" /></a>
+                <a class="me-2" href="#"><img class="social-icon" src="./img/instagram.svg" alt="" /></a>
+                <a class="me-2" href="#"><img class="social-icon" src="./img/whatsapp.svg" alt="" /></a>
+                <a class="me-2" href="#"><img class="social-icon" src="./img/twitter.svg" alt="" /></a>
+                <a class="me-2" href="#"><img class="social-icon" src="./img/linkedin.svg" alt="" /></a>
+                <a class="me-2" href="#"><img class="social-icon" src="./img/telegram.svg" alt="" /></a>
+                <a class="me-2" href="#"><img class="social-icon" src="./img/link.svg" alt="" /></a> -->
+                <a class="me-2" href="#"><img class="social-icon" src="./img/link.svg" alt="" /></a>
+              </div>
+            </div>
+            <div class="text-center mt-5">
+              <button type="button" class="btn btn-link button-link-white green js-edit-quote">
+                <img src="./img/create-quote.svg" alt="" srcset="" />&nbsp;Edit Quote
+              </button>
             </div>
           </div>
-          <div class="col-md-12 text-center white-color small-font pt-5">
-            <p>Share via</p>
-          </div>
-          <div class="col-md-12 text-center social-icons" style="z-index: 2">
-            <a class="me-2" href="#"><img class="social-icon" src="./img/facebook.svg" alt="" /></a>
-            <a class="me-2" href="#"><img class="social-icon" src="./img/instagram.svg" alt="" /></a>
-            <a class="me-2" href="#"><img class="social-icon" src="./img/whatsapp.svg" alt="" /></a>
-            <a class="me-2" href="#"><img class="social-icon" src="./img/twitter.svg" alt="" /></a>
-            <a class="me-2" href="#"><img class="social-icon" src="./img/linkedin.svg" alt="" /></a>
-            <a class="me-2" href="#"><img class="social-icon" src="./img/telegram.svg" alt="" /></a>
-            <a class="me-2" href="#"><img class="social-icon" src="./img/link.svg" alt="" /></a>
-          </div>
-          <div class="col-md-12 text-center mt-5">
-            <button type="button" class="btn btn-link button-link-white green">
-              <img src="./img/create-quote.svg" alt="" srcset="" />&nbsp;Edit Quote
-            </button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="card card-template"">
+        <div class="">
+          <div class="text-center py-4">
+            <img
+              class="author-img-personal js-author-image"
+              src="./img/author.png"
+              alt="..."
+              height="40"
+              width="40"
+            />
+            <h1 class="text-center white-color small-font text-uppercase js-author" style="margin-top: 16px">
+              Bill Russell
+            </h1>
+            <h2 class="quote-font white-color mt-4 js-quote" style="margin-top: 24px">
+              This game has always been, and will always be, about buckets.
+            </h2>
+            <img
+              style="margin-top: 40px; width: auto; height: 20px"
+              src="./img/liquote_white.svg"
+              alt=""
+              srcset=""
+            />
           </div>
         </div>
       </div>
@@ -100,6 +133,7 @@
     <script src="./js/components/footer.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="./js/html2canvas.min.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>

@@ -29,7 +29,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 carousel-padding" style="min-height: 320px">
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div id="quotesCarousel" class="carousel slide" data-bs-ride="carousel">
               <div class="col-md-12 carousel-inner">
                 <div class="carousel-item active text-center quote-1 py-4">
                   <img class="author-img" src="./img/author.png" alt="..." />
@@ -58,22 +58,12 @@
                 </div>
               </div>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleInterval"
-              data-bs-slide="prev"
-            >
+            <button class="carousel-control-prev" type="button" data-bs-target="#quotesCarousel" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
 
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleInterval"
-              data-bs-slide="next"
-            >
+            <button class="carousel-control-next" type="button" data-bs-target="#quotesCarousel" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
@@ -82,13 +72,14 @@
           <div class="col-md-12 text-center white-color small-font pt-5">
             <p>Share via</p>
           </div>
-          <div class="col-md-12 text-center social-icons" style="z-index: 2">
-            <a class="me-2" href="#"><img class="social-icon" src="./img/facebook.svg" alt="" /></a>
+          <div class="col-md-12 text-center home-social-icons" style="z-index: 2">
+            <!-- <a class="me-2" href="#"><img class="social-icon" src="./img/facebook.svg" alt="" /></a>
             <a class="me-2" href="#"><img class="social-icon" src="./img/instagram.svg" alt="" /></a>
             <a class="me-2" href="#"><img class="social-icon" src="./img/whatsapp.svg" alt="" /></a>
             <a class="me-2" href="#"><img class="social-icon" src="./img/twitter.svg" alt="" /></a>
             <a class="me-2" href="#"><img class="social-icon" src="./img/linkedin.svg" alt="" /></a>
             <a class="me-2" href="#"><img class="social-icon" src="./img/telegram.svg" alt="" /></a>
+            <a class="me-2" href="#"><img class="social-icon" src="./img/link.svg" alt="" /></a> -->
             <a class="me-2" href="#"><img class="social-icon" src="./img/link.svg" alt="" /></a>
           </div>
         </div>
@@ -96,19 +87,28 @@
     </section>
 
     <section>
-      <div class="row">
-        <div class="col-md-6 offset-md-3">
-          <div class="card card-template" style="background-color: brown;">
-            <div class="">
-              <div class="text-center py-4">
-                <img class="author-img-personal" src="./img/author.png" alt="..." />
-                <h1 class="text-center white-color small-font text-uppercase js-author" style="margin-top: 16px;">Bill Russell</h1>
-                <h2 class="quote-font white-color mt-4 js-quote" style="margin-top:24px"> 
-                  This game has always been, and will always be, about buckets.
-                </h2>
-                <img style="margin-top: 40px; width: auto; height: 20px;" src="./img/liquote_white.svg" alt="" srcset="">
-              </div>
-            </div>
+      <div class="card card-template"">
+        <div class="">
+          <div class="text-center py-4">
+            <img
+              class="author-img-personal js-author-image"
+              src="./img/author.png"
+              alt="..."
+              height="40"
+              width="40"
+            />
+            <h1 class="text-center white-color small-font text-uppercase js-author" style="margin-top: 16px">
+              Bill Russell
+            </h1>
+            <h2 class="quote-font white-color mt-4 js-quote" style="margin-top: 24px">
+              This game has always been, and will always be, about buckets.
+            </h2>
+            <img
+              style="margin-top: 40px; width: auto; height: 20px"
+              src="./img/liquote_white.svg"
+              alt=""
+              srcset=""
+            />
           </div>
         </div>
       </div>
