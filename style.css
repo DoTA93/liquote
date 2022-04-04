@@ -92,7 +92,7 @@ body {
     background-color: #F4F6F8;
 }
 
-.button-bmc{
+.button-bmc {
     background-color: #ffffff;
     font-size: 20px;
     border: none;
@@ -103,30 +103,62 @@ body {
     padding-left: 16px;
     padding-right: 16px;
 }
+.button-bmc path{
+    transition: all 0.3s ease-in-out;
+}
+
+.button-bmc:hover, .button-bmc:hover path {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+}
 
 .button-bmc.black {
     color: #262D33;
 }
+.button-bmc.black path {
+    fill: #262D33;
+}
 .button-bmc.red {
     color: #FF4F52;
+}
+.button-bmc.red path{
+    fill: #FF4F52;
 }
 .button-bmc.green {
     color: #3DC47E;
 }
+.button-bmc.green path{
+    fill: #3DC47E;
+}
 .button-bmc.han-blue {
     color: #4267B2;
+}
+.button-bmc.han-blue path{
+    fill: #4267B2;
 }
 .button-bmc.sky-blue {
     color: #4CB9FC;
 }
+.button-bmc.sky-blue path{
+    fill: #4CB9FC;
+}
 .button-bmc.purple {
     color: #6D75E7;
+}
+.button-bmc.purple path {
+    fill: #6D75E7;
 }
 .button-bmc.yellow {
     color: #FFD980;
 }
+.button-bmc.yellow path{
+    fill: #FFD980;
+}
 .button-bmc.blue {
     color: #3587FF;
+}
+.button-bmc.blue path{
+    fill: #3587FF;
 }
 
 .button-bmc.black:hover, 
@@ -134,25 +166,23 @@ body {
 .button-cq.black:hover, 
 .button-cq.black:active
 {
-    color: #ffffff;
-    background-color: #262D33;
-    border-color: #262D33;
+    background-color: #444E56;
+    border-color: #444E56;
 }
 .button-bmc.red:hover, 
 .button-bmc.red:active,
 .button-cq.red:hover, 
 .button-cq.red:active
 {
-    color: #ffffff;
-    background-color: #1ea961;
-    border-color: #1ea961;
+    background-color: #E82E31;
+    border-color: #E82E31;
 }
 .button-bmc.green:hover, 
+.button-bmc.green:hover path, 
 .button-bmc.green:active,
 .button-cq.green:hover, 
 .button-cq.green:active
 {
-    color: #ffffff;
     background-color: #1ea961;
     border-color: #1ea961;
 }
@@ -161,45 +191,40 @@ body {
 .button-cq.han-blue:hover, 
 .button-cq.han-blue:active
 {
-    color: #ffffff;
-    background-color: #1ea961;
-    border-color: #1ea961;
+    background-color: #2B509A;
+    border-color: #2B509A;
 }
 .button-bmc.sky-blue:hover, 
 .button-bmc.sky-blue:active,
 .button-cq.sky-blue:hover, 
 .button-cq.sky-blue:active
 {
-    color: #ffffff;
-    background-color: #1ea961;
-    border-color: #1ea961;
+    background-color: #37A4E8;
+    border-color: #37A4E8;
 }
 .button-bmc.purple:hover, 
 .button-bmc.purple:active,
 .button-cq.purple:hover, 
 .button-cq.purple:active
 {
-    color: #ffffff;
-    background-color: #1ea961;
-    border-color: #1ea961;
+    background-color: #4A53CE;
+    border-color: #4A53CE;
 }
 .button-bmc.yellow:hover, 
 .button-bmc.yellow:active,
 .button-cq.yellow:hover, 
 .button-cq.yellow:active
 {
-    color: #ffffff;
-    background-color: #1ea961;
-    border-color: #1ea961;
+    background-color: #E4B544;
+    border-color: #E4B544;
 }
 .button-bmc.blue:hover, 
 .button-bmc.blue:active,
 .button-cq.blue:hover, 
 .button-cq.blue:active
 {
-    color: #ffffff;
-    background-color: #1ea961;
-    border-color: #1ea961;
+    background-color: #2171E4;
+    border-color: #2171E4;
 }
 
 
@@ -351,7 +376,7 @@ body {
 }
 
 .input-default:active{
-    background-color: #1ea961;
+    border-color: #1ea961;
 }
 
 .input-upload:focus {
@@ -359,7 +384,7 @@ body {
 }
 
 .input-upload:active{
-    background-color: #1ea961;
+    border-color: #1ea961;
 }
 
 .input-default:focus {
@@ -502,22 +527,39 @@ label{
     /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); */
 }
 
- /* @media (max-width: 991.98px) { 
-     .navbar-desktop{
-         display: none;
-         
-     }
+.popup {
+    width: 400px;
+    background: white;
+    padding: 24px;
+    border-radius: 8px;
+    top: -300px;
+    display: none;
+}
+.popup::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -19px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #ffffff;
+}
+.popup::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -50px;
+    left: 4px;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid transparent;
+}
 
-  }
-
-  .navbar-desktop{
-      display: flex;
-  }
-
-  @media (min-width: 992px){
-    .navbar-mobile{
-        display: none;
-    }
-  } */
-
- 
+.popup-container:hover .popup {
+    display: block;
+}
