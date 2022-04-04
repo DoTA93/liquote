@@ -2,11 +2,11 @@ document.write(`
 <footer class="navbar navbar-expand-lg navbar-light d-flex align-items-center" style="z-index: 2">
       <div class="container-fluid">
       <div class="popup-container position-relative">
-        <a class="small-font white-color" style="text-decoration: none" href="#!">About liquote</a>
+        <a class="small-font white-color noHover" style="text-decoration: none" href="#!">About liquote</a>
         <div class="popup position-absolute">
           <p>What makes quotes even better? Quotes with minimilistic style. </p>
           <p>Liquote is free and for everyone. Our quotes are to motivate, inspire and inform everyone around the world. </p>
-          <p>© Liquote by <a href="https://idevia.in" target="_blank">iDevia</a>. From a creative to all the others. </p>
+          <p>© Liquote by <a  style="text-decoration: none; color:#262D33;" href="https://idevia.in" target="_blank"><b>iDevia</b></a>. From a creative to all the others. </p>
         </div>
       </div>
 
