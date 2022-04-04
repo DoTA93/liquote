@@ -103,6 +103,10 @@ body {
     padding-left: 16px;
     padding-right: 16px;
 }
+.button-bmc::active {
+    outline: none;
+    box-shadow: none;
+}
 .button-bmc path{
     transition: all 0.3s ease-in-out;
 }
@@ -229,14 +233,13 @@ body {
 
 
 .button-bmc:focus {
-    box-shadow: 0 0 0 0.25rem rgb(30 169 97 / 50%);
+    box-shadow: none;
 }
 
 
 .button-cq{
     color: #ffffff;
     font-size: 20px;
-    
     border-color: #ffffff;
     font-family: "DM Sans";
     font-weight: bold;
@@ -247,28 +250,14 @@ body {
     padding-right: 16px;
 }
 
-.button-cq:hover{
-    background-color: #1ea961;
-    border-color: #1ea961;
-}
-
-.button-cq:active{
-    background-color: #1ea961;
-    border-color: #1ea961;
-}
-
-.button-cq:focus {
-    box-shadow: 0 0 0 0.25rem rgb(30 169 97 / 50%);
-    background-color: #1ea961;
-    border-color: #1ea961;
-}
-
 .btn-outline-primary:active:focus{
-    box-shadow: 0 0 0 0.25rem rgb(30 169 97 / 50%);
+    box-shadow: none;
+    border-color: transparent;
 }
 
 .btn-primary:active:focus{
-    box-shadow: 0 0 0 0.25rem rgb(30 169 97 / 50%);
+    box-shadow: none;
+    border-color: transparent;
 }
 
 .button-default{
