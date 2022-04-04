@@ -572,6 +572,8 @@ label{
 .card-template{
     max-width: 500px;
     max-height: 500px;
+    min-width: 500px;
+    max-width: 500px;
     border: none;
     border-radius: 0px;
     padding: 24px;

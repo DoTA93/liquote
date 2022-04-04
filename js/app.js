@@ -36,7 +36,9 @@ const capture = (selector) => {
   html2canvas(
     document.querySelector(selector),
     {
-      backgroundColor: color
+      backgroundColor: color,
+      width: 500,
+      height: 500
     }
   ).then(canvas => {
     const canvasContainer = document.createElement('div')
@@ -47,6 +49,10 @@ const capture = (selector) => {
     })
     document.body.appendChild(canvasContainer)
     canvasContainer.classList.add('show')
+    var link = document.createElement('a')
+    link.download = 'liquote.png'
+    link.href = canvas.toDataURL()
+    link.click()
   })
 }
 const homeSocialIcons = document.querySelector('.home-social-icons')
@@ -146,4 +152,8 @@ if (createQuoteBtn) {
       document.getElementById('display-block').classList.add('d-none')
     })
   })
+}
+
+var download = function () {
+
 }
