@@ -119,47 +119,81 @@ body {
 .button-bmc.black {
     color: #262D33;
 }
-.button-bmc.black path {
-    fill: #262D33;
-}
 .button-bmc.red {
     color: #FF4F52;
-}
-.button-bmc.red path{
-    fill: #FF4F52;
 }
 .button-bmc.green {
     color: #3DC47E;
 }
-.button-bmc.green path{
-    fill: #3DC47E;
-}
 .button-bmc.han-blue {
     color: #4267B2;
-}
-.button-bmc.han-blue path{
-    fill: #4267B2;
 }
 .button-bmc.sky-blue {
     color: #4CB9FC;
 }
-.button-bmc.sky-blue path{
-    fill: #4CB9FC;
-}
 .button-bmc.purple {
     color: #6D75E7;
-}
-.button-bmc.purple path {
-    fill: #6D75E7;
 }
 .button-bmc.yellow {
     color: #FFD980;
 }
-.button-bmc.yellow path{
-    fill: #FFD980;
-}
 .button-bmc.blue {
     color: #3587FF;
+}
+
+.button-create-quote.black {
+    background-color: #262D33;
+    border-color: #262D33;
+}
+.button-create-quote.red {
+    background-color: #FF4F52;
+    border-color: #FF4F52;
+}
+.button-create-quote.green {
+    background-color: #3DC47E;
+    border-color: #3DC47E;
+}
+.button-create-quote.han-blue {
+    background-color: #4267B2;
+    border-color: #4267B2;
+}
+.button-create-quote.sky-blue {
+    background-color: #4CB9FC;
+    border-color: #4CB9FC;
+}
+.button-create-quote.purple {
+    background-color: #6D75E7;
+    border-color: #6D75E7;
+}
+.button-create-quote.yellow {
+    background-color: #FFD980;
+    border-color: #FFD980;
+}
+.button-create-quote.blue {
+    background-color: #3587FF;
+    border-color: #3587FF;
+}
+
+.button-bmc.black path {
+    fill: #262D33;
+}
+.button-bmc.red path{
+    fill: #FF4F52;
+}
+.button-bmc.green path{
+    fill: #3DC47E;
+}
+.button-bmc.han-blue path{
+    fill: #4267B2;
+}
+.button-bmc.sky-blue path{
+    fill: #4CB9FC;
+}
+.button-bmc.purple path {
+    fill: #6D75E7;
+}
+.button-bmc.yellow path{
+    fill: #FFD980;
 }
 .button-bmc.blue path{
     fill: #3587FF;
@@ -168,7 +202,8 @@ body {
 .button-bmc.black:hover, 
 .button-bmc.black:active,
 .button-cq.black:hover, 
-.button-cq.black:active
+.button-cq.black:active,
+.button-create-quote.black:hover
 {
     background-color: #444E56;
     border-color: #444E56;
@@ -176,7 +211,8 @@ body {
 .button-bmc.red:hover, 
 .button-bmc.red:active,
 .button-cq.red:hover, 
-.button-cq.red:active
+.button-cq.red:active,
+.button-create-quote.red:hover
 {
     background-color: #E82E31;
     border-color: #E82E31;
@@ -185,7 +221,8 @@ body {
 .button-bmc.green:hover path, 
 .button-bmc.green:active,
 .button-cq.green:hover, 
-.button-cq.green:active
+.button-cq.green:active,
+.button-create-quote.green:hover
 {
     background-color: #1ea961;
     border-color: #1ea961;
@@ -193,7 +230,8 @@ body {
 .button-bmc.han-blue:hover, 
 .button-bmc.han-blue:active,
 .button-cq.han-blue:hover, 
-.button-cq.han-blue:active
+.button-cq.han-blue:active,
+.button-create-quote.han-blue:hover
 {
     background-color: #2B509A;
     border-color: #2B509A;
@@ -201,7 +239,8 @@ body {
 .button-bmc.sky-blue:hover, 
 .button-bmc.sky-blue:active,
 .button-cq.sky-blue:hover, 
-.button-cq.sky-blue:active
+.button-cq.sky-blue:active,
+.button-create-quote.sky-blue:hover
 {
     background-color: #37A4E8;
     border-color: #37A4E8;
@@ -209,7 +248,8 @@ body {
 .button-bmc.purple:hover, 
 .button-bmc.purple:active,
 .button-cq.purple:hover, 
-.button-cq.purple:active
+.button-cq.purple:active,
+.button-create-quote.purple:hover
 {
     background-color: #4A53CE;
     border-color: #4A53CE;
@@ -217,7 +257,8 @@ body {
 .button-bmc.yellow:hover, 
 .button-bmc.yellow:active,
 .button-cq.yellow:hover, 
-.button-cq.yellow:active
+.button-cq.yellow:active,
+.button-create-quote.yellow:hover
 {
     background-color: #E4B544;
     border-color: #E4B544;
@@ -225,7 +266,8 @@ body {
 .button-bmc.blue:hover, 
 .button-bmc.blue:active,
 .button-cq.blue:hover, 
-.button-cq.blue:active
+.button-cq.blue:active,
+.button-create-quote.blue:hover
 {
     background-color: #2171E4;
     border-color: #2171E4;
@@ -260,11 +302,9 @@ body {
     border-color: transparent;
 }
 
-.button-default{
+.button-create-quote {
     color: #ffffff;
     font-size: 16px;
-    background-color: #3DC47E;
-    border-color: #3DC47E;
     font-family: "DM Sans";
     font-weight: bold;
     border-radius: 8px;
@@ -275,20 +315,15 @@ body {
     width: 100%;
 }
 
-.button-default:hover{
+.button-create-quote:hover,
+.button-create-quote:active,
+.button-create-quote:focus
+{
     background-color: #1ea961;
     border-color: #1ea961;
 }
-
-.button-default:active{
-    background-color: #1ea961;
-    border-color: #1ea961;
-}
-
-.button-default:focus {
-    box-shadow: 0 0 0 0.25rem rgb(30 169 97 / 50%) !important;
-    background-color: #1ea961;
-    border-color: #1ea961;
+.button-create-quote:focus {
+    box-shadow: none;
 }
 
 .button-link{

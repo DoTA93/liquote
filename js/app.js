@@ -8,6 +8,10 @@ if (document.querySelectorAll('.color')) {
       document.querySelector('body').style.backgroundColor = color
       document.querySelector('.button-bmc').setAttribute('class', `btn btn-primary button-bmc d-flex align-items-center ${colorName}`)
       document.querySelector('.button-cq').setAttribute('class', `btn btn-outline-primary button-cq d-flex align-items-center ${colorName}`)
+      if (document.querySelector('.button-create-quote')) {
+        console.log(document.querySelector('.button-create-quote'))
+        document.querySelector('.button-create-quote').setAttribute('class', `btn btn-primary button-create-quote ${colorName} mt-3 js-create-quote`)
+      }
     })
   })
 }
