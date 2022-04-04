@@ -308,6 +308,16 @@ body {
     width: 100%;
 }
 
+.button-link-white{
+    color: #FFFFFF;
+    text-decoration: none;
+    width: 100%;
+}
+
+.button-link-white:hover{
+    color: #FFFFFF;
+}
+
 .button-link:hover{
     color: #1ea961;
 }
@@ -562,4 +572,21 @@ label{
 
 .popup-container:hover .popup {
     display: block;
+}
+
+.noHover{
+    pointer-events: none;
+}
+
+.card-template{
+    max-width: 500px;
+    max-height: 500px;
+    border: none;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.author-img-personal{
+    width: 72px;
+    height: 72px;
 }
