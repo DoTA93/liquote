@@ -96,7 +96,14 @@ body {
             }
         }
 
-        
+        // button link
+    .button-link {
+      color: $theme-foreground;
+      path {
+        fill: $theme-foreground;
+      }
+    }
+
 
         //carousel controls
         .carousel-control-next-icon {
