@@ -16,7 +16,7 @@ document.write(`
             </li>
             <li class="nav-item d-none d-lg-flex">
               <a class="nav-link" href="https://rzp.io/l/liquote"
-                ><button type="button" class="btn btn-primary button-bmc green d-flex align-items-center">
+                ><button type="button" class="btn btn-primary-altered d-flex align-items-center">
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <mask id="path-1-outside-1_41_105" maskUnits="userSpaceOnUse" x="6" y="3" width="19" height="26" fill="black">
                   <rect fill="white" x="6" y="3" width="19" height="26"/>

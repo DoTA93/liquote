@@ -1,0 +1,61 @@
+
+$theme: #262D33;
+$theme-100: #444E56;
+$white: #ffffff;
+
+body {
+  &.black {
+    background-color: $theme;
+    color: $white;
+
+    // button altered 
+    .btn-primary-altered {
+      background-color: $white;
+      color: $theme;
+
+      path {
+        transition: background-color 0.3s ease;
+        fill: $theme;
+      }
+
+      &:hover, 
+      &:focus, 
+      &:active {
+        background-color: $theme-100;
+        border-color: $theme-100;
+        outline: none;
+        box-shadow: none;
+        color: $white;
+
+        path {
+          fill: $white;
+        }
+      }
+
+    }
+
+    // btn-primary
+    .btn-primary {
+      color: $white;
+      background-color: $theme;
+      border-color: $theme;
+
+      &:hover, 
+      &:focus, 
+      &:active {
+        background-color: $theme-100;
+        border-color: $theme-100;
+      
+        path: {
+          fill: $white;
+        }
+      }
+
+      &:active,
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+}
