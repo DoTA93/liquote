@@ -5,13 +5,7 @@ if (document.querySelectorAll('.color')) {
     c.addEventListener('click', function () {
       color = this.dataset.color
       colorName = this.dataset.name
-      document.querySelector('body').style.backgroundColor = color
-      document.querySelector('.button-bmc').setAttribute('class', `btn btn-primary button-bmc d-flex align-items-center ${colorName}`)
-      document.querySelector('.button-cq').setAttribute('class', `btn btn-outline-primary button-cq d-flex align-items-center ${colorName}`)
-      if (document.querySelector('.button-create-quote')) {
-        console.log(document.querySelector('.button-create-quote'))
-        document.querySelector('.button-create-quote').setAttribute('class', `btn btn-primary button-create-quote ${colorName} mt-3 js-create-quote`)
-      }
+      document.querySelector('body').setAttribute('class', colorName)
     })
   })
 }
@@ -20,7 +14,6 @@ fetchQuote = (id) => {
   fetch('https://api.quotable.io/random')
     .then(data => data.json())
     .then(data => {
-      console.log(document.querySelector(`.quote-${id}`))
       document.querySelector(`.quote-${id} .js-quote`).innerHTML = data.content
       document.querySelector(`.quote-${id} .js-author`).innerHTML = data.author
     })
@@ -36,13 +29,16 @@ if (quotesCarousel) {
 }
 
 const capture = (selector) => {
-
+  let windowWidth = window.innerWidth
+  if (windowWidth > 500) windowWidth = 500
+  console.log(windowWidth)
   html2canvas(
     document.querySelector(selector),
     {
       backgroundColor: color,
-      width: 500,
-      height: 500
+      width: 200,
+      height: 200,
+      scale: 5
     }
   ).then(canvas => {
     const canvasContainer = document.createElement('div')
@@ -68,25 +64,22 @@ if (homeSocialIcons) {
     // Get quote
     document.querySelector('.card-template').style.backgroundColor = color
 
-    console.log(document.querySelector('.carousel-item.active .js-quote'))
-
     const quote = document.querySelector('.carousel-item.active .js-quote').innerHTML
     const author = document.querySelector('.carousel-item.active .js-author').innerHTML
 
     document.querySelector('.card-template .js-quote').innerHTML = quote
     document.querySelector('.card-template .js-author').innerHTML = author
 
-    const jsQuote = document.querySelector('.js-quote')
-    console.log(quote.length)
+    const jsQuote = document.querySelector('.card-template .js-quote')
     if (quote.length <= 90) {
-      jsQuote.style.fontSize = '40px'
-      jsQuote.style.lineHeight = '48px'
+      jsQuote.style.fontSize = '16px'
+      jsQuote.style.lineHeight = '19.2px'
     } else if (quote.length > 90 && quote.length <= 138) {
-      jsQuote.style.fontSize = '32px'
-      jsQuote.style.lineHeight = '40px'
+      jsQuote.style.fontSize = '12.8px'
+      jsQuote.style.lineHeight = '16px'
     } else if (quote.length > 138 && quote.length <= 200) {
-      jsQuote.style.fontSize = '24px'
-      jsQuote.style.lineHeight = '32px'
+      jsQuote.style.fontSize = '9.6px'
+      jsQuote.style.lineHeight = '12.8px'
     }
 
     capture(".card-template")
@@ -126,26 +119,27 @@ if (createQuoteBtn) {
 
 
     if (quote) {
+      // set preview
+      const jsQuote = document.querySelector('.card-template .js-quote')
+      if (quote.length <= 90) {
+        jsQuote.style.fontSize = '16px'
+        jsQuote.style.lineHeight = '19.2px'
+      } else if (quote.length > 90 && quote.length <= 138) {
+        jsQuote.style.fontSize = '12.8px'
+        jsQuote.style.lineHeight = '16px'
+      } else if (quote.length > 138 && quote.length <= 200) {
+        jsQuote.style.fontSize = '9.6px'
+        jsQuote.style.lineHeight = '12.8px'
+      } else {
+        return alert('Maximum 200 characters allowed.')
+      }
+
       document.querySelector('.js-display-quote').innerHTML = quote
       document.querySelector('.js-display-author').innerHTML = author || 'Anonymous'
       document.querySelector('.js-quote').innerHTML = quote
       document.querySelector('.js-author').innerHTML = author || 'Anonymous'
       document.getElementById('form-block').classList.add('d-none')
       document.getElementById('display-block').classList.remove('d-none')
-
-      // set preview
-      const jsQuote = document.querySelector('.js-quote')
-      console.log(quote.length)
-      if (quote.length <= 90) {
-        jsQuote.style.fontSize = '40px'
-        jsQuote.style.lineHeight = '48px'
-      } else if (quote.length > 90 && quote.length <= 138) {
-        jsQuote.style.fontSize = '32px'
-        jsQuote.style.lineHeight = '40px'
-      } else if (quote.length > 138 && quote.length <= 200) {
-        jsQuote.style.fontSize = '24px'
-        jsQuote.style.lineHeight = '32px'
-      }
     }
 
 
@@ -158,6 +152,13 @@ if (createQuoteBtn) {
   })
 }
 
-var download = function () {
-
+if (document.querySelector('#js-custom-quote')) {
+  document.querySelector('#js-custom-quote').onkeypress = function (e) {
+    console.log()
+    let remaining = 200 - e.target.value.length
+    document.querySelector('.js-max-character').innerHTML = remaining
+    if (remaining < 0) {
+      return false
+    }
+  }
 }

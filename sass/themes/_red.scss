@@ -1,0 +1,124 @@
+$theme: #FF4F52;
+$white: #ffffff;
+$theme-foreground: $white;
+
+body {
+    &.red {
+        background-color: $theme;
+        color: $theme-foreground;
+
+            .card-template {
+                background-color: $theme;
+            }
+
+        .link-color {
+            color: $theme-foreground;
+        }
+
+        .logo {
+            path {
+                fill: $theme-foreground;
+            }
+        }
+
+        // button altered 
+        .btn-primary-altered {
+            background-color: $theme-foreground;
+            color: $theme;
+
+            path {
+                transition: background-color 0.3s ease;
+                fill: $theme;
+            }
+
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: darken($color: $theme, $amount: 5);
+                border-color: darken($color: $theme, $amount: 5);
+                outline: none;
+                box-shadow: none;
+                color: $theme-foreground;
+
+                path {
+                    fill: $theme-foreground;
+                }
+            }
+
+        }
+
+        // btn-primary
+        .btn-primary {
+            color: $theme-foreground;
+            background-color: $theme;
+            border-color: $theme;
+
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: darken($color: $theme, $amount: 5);
+                border-color: darken($color: $theme, $amount: 5);
+
+                path: {
+                    fill: $theme-foreground;
+                }
+            }
+
+            &:active,
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+
+        // btn-secondary-outline
+        .btn-outline-secondary {
+            color: $theme-foreground;
+            background-color: $theme;
+            border-color: $theme-foreground;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-left: 16px;
+            padding-right: 16px;
+            border-radius: 8px;
+
+            path {
+                fill: $theme-foreground;
+            }
+
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: rgba(0, 0, 0, 0.1);
+                border-color: rgba(0, 0, 0, 0.1);
+                outline: none;
+                box-shadow: none;
+            }
+        }
+
+        // button link
+    .button-link {
+      color: $theme-foreground;
+      path {
+        fill: $theme-foreground;
+      }
+    }
+
+        //carousel controls
+        .carousel-control-next-icon {
+            background-image: url(../img/arrow_right.svg);
+        }
+
+        .carousel-control-prev-icon {
+            background-image: url(../img/arrow_left.svg);
+        }
+
+        .card-template {
+      .branding {
+        &.branding-dark {
+          display: none;
+        }
+      }
+    }
+    }
+}

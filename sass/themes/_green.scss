@@ -1,14 +1,14 @@
 
-$theme: #262D33;
+$theme: #3DC47E;
 $white: #ffffff;
 $theme-foreground: $white;
 
 body {
-  &.black {
+  &.green {
     background-color: $theme;
     color: $theme-foreground;
 
-    .card-template {
+         .card-template {
       background-color: $theme;
     }
 
