@@ -286,9 +286,9 @@ body {
 }
 
 .button-default:focus {
-    box-shadow: 0 0 0 0.25rem rgb(30 169 97 / 50%) !important;
+    box-shadow: none;
     background-color: #1ea961;
-    border-color: #1ea961;
+    border: none;
 }
 
 .button-link{
@@ -346,10 +346,10 @@ body {
     transition: opacity .15s ease;
 }
 
-.social-icon{
+/* .social-icon{
     max-width: 64px;
     height: auto;
-}
+} */
 
 .author-img{
     max-width: 104px;
@@ -377,19 +377,22 @@ body {
 }
 
 .input-default:active{
-    border-color: #1ea961;
+    border-color:none;
 }
 
 .input-upload:focus {
-    box-shadow: 0 0 0 0.25rem rgb(30 169 97 / 20%);
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.1);
+    background-color: #F4F6F8;
+    border:  rgba(0, 0, 0, 0.1);
 }
 
 .input-upload:active{
-    border-color: #1ea961;
+    border-color: none;
 }
 
 .input-default:focus {
-    box-shadow: 0 0 0 0.25rem rgb(30 169 97 / 20%);
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.1);
+    background-color: #F4F6F8;
 }
 
 .input-default::placeholder{
@@ -448,10 +451,10 @@ label{
         line-height: 16px;
     }
 
-    .social-icon{
+    /* .social-icon{
         max-width: 40px;
         height: auto;
-    }
+    } */
 
     .author-img{
         max-width: 88px;
@@ -591,4 +594,33 @@ label{
 .author-img-personal{
     width: 72px;
     height: 72px;
+}
+
+.button-download{
+    padding-left:16px;
+    padding-right:16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 8px;
+}
+
+.button-download:hover{
+    background-color: rgba(0, 0, 0, 0.1) ;
+    color: #ffffff;
+    border: none;
+}
+
+.button-download:focus{
+     outline: none;
+  box-shadow: none;
+}
+
+.button-download:active{
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-color: none;
+}
+
+.button-download:active:focus{
+    box-shadow: none;
 }
